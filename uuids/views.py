@@ -14,6 +14,8 @@ def getuuids(request):
     # gets all uuidstamp object from model
     uuidstamps = UUIDStamp.objects.all()
 
+    # Pagination wasn't included because of the requirements given
+
     # gets an array of custom dictionary where key is datetime and value is uuid
     data = [ uuidstamp.get_uuid_stamp_dic() for uuidstamp in uuidstamps] 
     return Response(data)

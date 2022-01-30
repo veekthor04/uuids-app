@@ -7,19 +7,26 @@ class Migration(migrations.Migration):
 
     initial = True
 
-    dependencies = [
-    ]
+    dependencies = []
 
     operations = [
         migrations.CreateModel(
-            name='UUIDStamp',
+            name="UUIDStamp",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('uuid_string', models.UUIDField()),
-                ('datetime', models.DateTimeField(auto_now_add=True)),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("uuid_string", models.UUIDField()),
+                ("datetime", models.DateTimeField(auto_now_add=True)),
             ],
             options={
-                'ordering': ['-datetime'],
+                "ordering": ["-datetime"],
             },
         ),
     ]

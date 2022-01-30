@@ -6,13 +6,13 @@ from django.db import migrations
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('uuids', '0001_initial'),
+        ("uuids", "0001_initial"),
     ]
 
     operations = [
         migrations.RenameField(
-            model_name='uuidstamp',
-            old_name='uuid_string',
-            new_name='uuid_obj',
+            model_name="uuidstamp",
+            old_name="uuid_string",
+            new_name="uuid_obj",
         ),
     ]

@@ -1,10 +1,11 @@
+from uuid import uuid4
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from rest_framework import generics
-from .models import UUIDStamp
-from uuid import uuid4
 
-# Create your views here.
+from .models import UUIDStamp
+
+
 @api_view(['GET',])
 def getuuids(request):
 
